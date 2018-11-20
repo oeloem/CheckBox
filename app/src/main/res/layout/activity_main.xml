@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@drawable/gaad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Silahkan Pilih Hobimu"
+        android:textSize="15dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/cb"
+        android:layout_alignStart="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:text="Main Bola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp" />
+
+    <CheckBox
+        android:id="@+id/cb0"
+        android:text="Dengerin Musik"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb"
+        android:layout_alignStart="@+id/cb"
+        android:layout_below="@+id/cb"/>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:text="Masak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb0"
+        android:layout_alignLeft="@+id/cb0"
+        android:layout_alignStart="@+id/cb0"
+        android:layout_marginTop="2dp"/>
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:text="Menggambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/cb1"
+        android:layout_alignLeft="@+id/cb1"
+        android:layout_alignStart="@+id/cb1"/>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:text="Sepeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/cb2"
+        android:layout_alignLeft="@+id/cb2"
+        android:layout_alignStart="@id/cb2"/>
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:text="Main Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/cb3"
+        android:layout_alignLeft="@+id/cb3"
+        android:layout_alignStart="@+id/cb3"/>
+
+    <CheckBox
+        android:id="@+id/cb5"
+        android:text="Baca Buku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/cb4"
+        android:layout_alignLeft="@+id/cb4"
+        android:layout_alignStart="@+id/cb4"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:text="TAMPILKAN"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cb5"
+        android:layout_marginTop="40dp"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
